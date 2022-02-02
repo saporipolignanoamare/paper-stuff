@@ -1,3 +1,22 @@
+@font-face {
+	font-family: Affogato;
+	font-weight: 500;
+	src: url(./fonts/Affogato-Medium.otf);
+}
+
+@font-face {
+	font-family: Affogato;
+	font-weight: 700;
+	src: url(./fonts/Affogato-Bold.otf);
+}
+
+/*  */
+
+* {
+	font-family: Affogato, sans-serif;
+	box-sizing: border-box;
+}
+
 body,
 #svelte {
 	padding: 0;

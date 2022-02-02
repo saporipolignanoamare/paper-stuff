@@ -45,3 +45,15 @@ export async function getProductsByCategory(
 	// Casting type
 	return data.items as Array<IProdotto>;
 }
+
+export async function getTaralli(
+): Promise<Array<IProdotto>> {
+	// Requesting categories
+	const data = await client.getEntries({
+		content_type: 'prodotto',
+		'fields.categoria.sys.id': "4DyT6w3UIlV6p0qonA9Ayr",
+		"locale": "*"
+	});
+	// Casting type
+	return data.items as Array<IProdotto>;
+}
